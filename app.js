@@ -9,10 +9,10 @@ const counter = () => {
   counterNumberTwo++;
   container.style.filter = `blur(${counterNumber}px)`;
   h2.innerText = `${counterNumberTwo}%`;
+  h2.style.opacity = `${counterNumber}%`;
 
   if (counterNumber == 0) {
     const stopInterval = clearInterval(startInterval);
-    h2.classList.add("opacityH2");
   }
   console.log(counterNumber);
 };
